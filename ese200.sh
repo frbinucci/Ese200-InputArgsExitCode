@@ -30,7 +30,12 @@ echo
 
 numero=$(($RANDOM % 256))
 
-echo "Numero restituito: \"$numero\""
+echo "Il comando ha restiuito il codice d'uscita: \"$numero\""
+echo
+echo 'Per verificare il codice di uscita:'
+echo
+echo 'Digitare echo $? se si sta utilizzando un sistema Linux'
+echo 'Digitare echo %ERRORLVEL% se si sta utilizzando Windows'
 
 exit $numero
 
